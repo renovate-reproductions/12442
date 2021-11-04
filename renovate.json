@@ -1,5 +1,19 @@
 {
-  "extends": [
-    "config:base"
+  "extends":[
+    "config:js-app",
+    ":automergePatch",
+    ":label(Renovate)",
+    ":prConcurrentLimit10",
+    ":prNotPending",
+    ":timezone(Asia/Tokyo)"
+  ],
+  "packageRules":[
+    {
+      "allowedVersions":"16.x",
+      "description":"Use LTS version",
+      "matchPackageNames":[
+        "node"
+      ]
+    }
   ]
 }
