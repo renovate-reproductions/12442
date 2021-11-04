@@ -4,7 +4,6 @@
     ":automergePatch",
     ":label(Renovate)",
     ":prConcurrentLimit10",
-    ":prNotPending",
     ":timezone(Asia/Tokyo)"
   ],
   "packageRules":[
